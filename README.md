@@ -1,8 +1,13 @@
 # smoothscroll.js 3.1
 
-##Support, Questions, and Collaboration
+## Support, Questions, and Collaboration
 
-Documentation
+Documentation:
+>First statement this plugin can support to window Object only
+
+>Then, i have try to develope for multi-element in use...
+
+>Ok...
 
 Install by handler:
 > snippet into your page
@@ -11,18 +16,18 @@ Install by handler:
 <script type="text/javascript" src="js/smoothscroll.js"></script>
 ```
 >
-###set Attribute on the element: 
+### set Attribute on the element: 
 >data-gambitsmoothscroll="true"
-###set property CSS on the element:
+### set property CSS on the element:
 >overflow-y: auto; Or overflow-x: auto;
-###Or
+### Or
 >overflow-y: scroll; Or overflow-x: scroll;
 
 ```html
 <div id="container" style="height: 600px;overflow-y: auto;" data-gambitsmoothscroll="true"></div>
 ```
 
-##Advanced Setting:
+## Advanced Setting:
 
 We can apply speed and amount for wheel Event.
 
@@ -38,7 +43,7 @@ c = new GambitSmoothScroll({
 ```
 Then, Saved to Enjoy!
 
-##Building
+## Building
 
 >The source code is open, you can develope as you far!
 
