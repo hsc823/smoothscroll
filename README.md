@@ -28,7 +28,7 @@ Install by handler:
 >overflow-y: scroll; Or overflow-x: scroll;
 
 ```html
-<div id="container" style="height: 600px;overflow-y: auto;" data-gambitsmoothscroll="true"></div>
+<div style="height: 600px;overflow-y: auto;" data-gambitsmoothscroll="true"></div>
 ```
 
 ## Advanced Setting:
