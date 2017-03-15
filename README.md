@@ -4,6 +4,10 @@
 
 Documentation:
 >First statement this plugin can support to window Object only
+> 
+ * Author Benjamin Intal - Gambit Technologies Inc
+ * Version 3.1
+ * License: Proprietary, Gambit Technologies Inc & Benjamin Intal
 
 >Then, i have try to develope for multi-element in use...
 
