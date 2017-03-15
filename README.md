@@ -35,7 +35,7 @@ And we suggest to keep fresh-enviroment you should open the `smoothscroll.js` to
 
 *Find to: `c = new GambitSmoothScroll();` change to:*
 
-```javascript
+```js
 c = new GambitSmoothScroll({
   speed: 900,
   amount: 300
