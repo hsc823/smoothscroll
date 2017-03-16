@@ -21,7 +21,7 @@ function(a, c) {
 			'speed': 900,
 			'fps': 0,
 			'amountSmooth': 150,
-			'speedSmooth': 9200,
+			'speedSmooth': 2200,
 			'fpsSmooth': 16.666666667
 		};
 		for (var key in defaults) {
