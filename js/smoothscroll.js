@@ -69,7 +69,7 @@ function(a, c) {
 	GambitSmoothScroll.prototype.isDirection = function(obj) {
 		var direction, style = window.getComputedStyle(obj);
 		if (style.overflowY == 'auto' | style.overflowY == 'scroll' | style.overflow == 'auto' | style.overflow == 'scroll') {
-			direction = 'y';console.log(direction)
+			direction = 'y';
 		} else if (style.overflowX == 'auto' | style.overflowX == 'scroll') {
 			direction = 'x';
 		}
