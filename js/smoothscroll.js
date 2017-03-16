@@ -21,7 +21,7 @@ function(a, c) {
 			'speed': 900,
 			'fps': 0,
 			'amountSmooth': 150,
-			'speedSmooth': 2200,
+			'speedSmooth': 9200,
 			'fpsSmooth': 16.666666667
 		};
 		for (var key in defaults) {
@@ -52,7 +52,7 @@ function(a, c) {
 			settings.direction = myDescendant.direction;
 			settings.selector = myDescendant.parent;
 			//WHEN CHANGE SELECTOR SCROLLING
-			//c.stop();
+			c.stop();
 		});
 		// Disable in mobile because we don't need smooth scrolling there
 		if (navigator.userAgent.match(/Mobi/)) {
@@ -67,16 +67,17 @@ function(a, c) {
 	 * Extra Functions: Check
 	 */
 	GambitSmoothScroll.prototype.isDirection = function(obj) {
-		var direction;
-		if (obj.style.overflowY == 'auto' | obj.style.overflowY == 'scroll') {
-			direction = 'y';
-		} else if (obj.style.overflowX == 'auto' | obj.style.overflowX == 'scroll') {
+		var direction, style = window.getComputedStyle(obj);
+		if (style.overflowY == 'auto' | style.overflowY == 'scroll' | style.overflow == 'auto' | style.overflow == 'scroll') {
+			direction = 'y';console.log(direction)
+		} else if (style.overflowX == 'auto' | style.overflowX == 'scroll') {
 			direction = 'x';
 		}
 		return direction;
 	}
 	GambitSmoothScroll.prototype.isSmooth = function(obj) {
 		if (obj.getAttribute('data-gambitsmoothscroll')) {
+		    
 			return true;
 		}
 		return false;
@@ -232,4 +233,4 @@ function(a, c) {
 	};
 	//AUTO: Initial
 	c = new GambitSmoothScroll();
-}(this);
+}(this)
